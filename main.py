@@ -86,10 +86,10 @@ def measure(device):
       max=average_scores['max']
     ))
   print('(フィールドデータ)', end=' ')
-  print('FCP: 平均 {main} s'.format(main=average_field_fcp_scores['main']), end=', ')
-  print('LCP: 平均 {main} s'.format(main=average_field_lcp_scores['main']), end=', ')
-  print('FID: 平均 {main} ms'.format(main=average_field_fid_scores['main']), end=', ')
-  print('CLS: 平均 {main}'.format(main=average_field_cls_scores['main']))
+  print('FCP: {main} s'.format(main=average_field_fcp_scores['main']), end=', ')
+  print('LCP: {main} s'.format(main=average_field_lcp_scores['main']), end=', ')
+  print('FID: {main} ms'.format(main=average_field_fid_scores['main']), end=', ')
+  print('CLS: {main}'.format(main=average_field_cls_scores['main']))
   print('(ラボデータ)', end=' ')
   print('累積レイアウト変更: 平均 {main}'.format(main=average_lab_cls_scores['main']))
 
